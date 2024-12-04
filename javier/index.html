@@ -6,10 +6,288 @@
     <title>Document</title> hola?
 </head>
 <body>
-    <h1> ppp mg</h1>
-    <a href="Elodc/index.html">enlace de eloy</a>
-    <a href="davidgv/index.html">Hola hola</a>
-    <a href="javier/index.html">enlace de Javier</a>
+    ¡Claro! Crearé una estructura de una página web inspirada en el estilo de lujo y la estética de Rolls-Royce. La página será elegante, minimalista y utilizará una paleta de colores y elementos que evoquen sofisticación. Aquí te doy una estructura básica en HTML y CSS, aunque si deseas algo más avanzado como JavaScript o interactividad, podemos expandirla según sea necesario.
+
+### Estructura de la Página Web - Inspiración Rolls-Royce
+
+#### 1. HTML básico:
+Este código será la base de la página. Empezaremos con una estructura básica para un sitio de lujo, asegurándonos de que tenga la elegancia que caracteriza a marcas de alto nivel.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experiencia y lujo de Rolls-Royce. Los mejores autos de lujo a tu alcance.">
+  <title>Rolls-Royce - El lujo sobre ruedas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="logo-rolls-royce.png" alt="Rolls-Royce" class="logo">
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#models">Modelos</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>El lujo, redefinido.</h1>
+      <p>Descubre la experiencia única de Rolls-Royce, donde la elegancia se encuentra con la ingeniería de precisión.</p>
+      <a href="#models" class="btn-primary">Explorar Modelos</a>
+    </div>
+  </section>
+
+  <section id="models" class="models-section">
+    <div class="container">
+      <h2>Modelos Exclusivos</h2>
+      <div class="models-list">
+        <!-- Modelo 1 -->
+        <div class="model-item">
+          <img src="model-phantom.jpg" alt="Phantom" class="model-image">
+          <h3>Phantom</h3>
+          <p>Un icono de lujo, elegancia y confort sin igual.</p>
+          <a href="#" class="btn-primary">Ver Detalles</a>
+        </div>
+        <!-- Modelo 2 -->
+        <div class="model-item">
+          <img src="model-cullinan.jpg" alt="Cullinan" class="model-image">
+          <h3>Cullinan</h3>
+          <p>El SUV de lujo que redefine el concepto de poder y sofisticación.</p>
+          <a href="#" class="btn-primary">Ver Detalles</a>
+        </div>
+        <!-- Modelo 3 -->
+        <div class="model-item">
+          <img src="model-dawn.jpg" alt="Dawn" class="model-image">
+          <h3>Dawn</h3>
+          <p>El convertible de lujo por excelencia, diseñado para los momentos más exclusivos.</p>
+          <a href="#" class="btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Tu Experiencia Rolls-Royce</h2>
+      <p>Cada vehículo Rolls-Royce es una obra maestra que combina diseño, innovación y una atención al detalle que pocos pueden ofrecer.</p>
+      <a href="#contact" class="btn-primary">Solicitar Test Drive</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Estás a un paso de unirte a la familia Rolls-Royce. Contáctanos para más información.</p>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Rolls-Royce. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
+  </script>
+</body>
+</html>
+```
+
+#### 2. CSS para el estilo de lujo:
+El siguiente código de CSS es fundamental para mantener la estética elegante, limpia y sofisticada que caracteriza a una marca de lujo.
+
+```css
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 30px;
+}
+
+.navbar-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #f1c40f;
+}
+
+.hero {
+  height: 100vh;
+  background: url('luxury-car-background.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #f1c40f;
+  color: #000;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e0b30d;
+}
+
+.models-section {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.models-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.model-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.model-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.model-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.model-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.experience-section {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-section {
+  background-color: #ecf0f1;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
     
     
 </body>
