@@ -1,0 +1,176 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navegación y título */
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo .logo {
+    width: 150px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #aaa;
+  }
+  
+  /* Sección general */
+  .hero {
+    background: url('.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5px 1px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3px;
+    margin-bottom: 1px;
+  }
+  
+  .hero-content p {
+    margin-bottom: 2px;
+  }
+  
+  .btn-primary { /*Consultado con ia*/
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #444;
+  }
+  
+  /* Sección de los modelos */
+  .models-section {
+    background-color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .models-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .models-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .model-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .model-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /*  Seccion x */
+  .experience-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .experience-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  /* Seccion del contacto */
+  .contact-section {
+    background-color: #f5f5f5;
+    padding: 4rem 1rem;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    align-self: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
