@@ -105,14 +105,43 @@ div{
     border-radius: 20px;
     box-shadow: 1px 1px 1rem;
     transition: 0.3s ease;
+    background-image: url(img/car1.jpg);
     
 }
 
 .body2-1-1:hover{
     cursor:crosshair;
     transform: translateY(-10px);
+   
+}
+.body2-1-2{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1rem;
+    transition: 0.3s ease;
+    
 }
 
+.body2-1-2:hover{
+    cursor:crosshair;
+    transform: translateY(-10px);
+   
+}
+.body2-1-3{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1rem;
+    transition: 0.3s ease;
+    
+}
+
+.body2-1-3:hover{
+    cursor:crosshair;
+    transform: translateY(-10px);
+   
+}
 .body3{
     background-color: beige;
     height: 100px;
