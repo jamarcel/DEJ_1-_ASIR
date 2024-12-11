@@ -166,3 +166,16 @@ div{
         transform: translateX(-500%);
     }
 }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}.content {
+    padding-top: 80px; /* Da espacio al contenido debajo de la barra */
+}
