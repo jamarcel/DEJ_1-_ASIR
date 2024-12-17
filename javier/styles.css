@@ -29,16 +29,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .navbar-logo .logo {
-    width: 150px;
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 7rem;
   }
   
   .navbar-links a {
@@ -108,7 +118,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1;
-    min-width: 250px;
+    min-width: 250px; /* Esta línea es con IA */
   }
   
   .model-image {
