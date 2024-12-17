@@ -126,6 +126,12 @@ div{
     margin-top: -10px;
     box-shadow: 1px 1px 1rem;
 }
+.img1above>h1{
+    text-align: center;
+    text-shadow: 1px 1px 1rcap;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
 .body2-1-2{
     width: 350px;
     height: 250px;
@@ -196,15 +202,31 @@ div{
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    transform: translate(infinite);
+    
 }
-
+.barra .textomov{
+    transform: translate(infinite); animation-name: desplazamiento; animation-duration: 10s; animation-iteration-count: infinite ;
+    text-shadow: 1px 1px 2rcap;
+    font-size: 25px;
+}
 @keyframes desplazamiento {
-    0% {
-        transform: translateX(500%);
+    from {
+        transform: translateX(3500%);
     }
-    100% {
-        transform: translateX(-500%);
+    to {
+        transform: translateX(-3500%);
     }
 }
 
+
+@media (max-width: 1000px){
+    .item{
+        background-color: aqua;
+        flex-grow: 1;        
+        margin: 20px;
+        padding: 100px 20px;
+    }
+    .disappear{
+        display: none;
+    }
+}
