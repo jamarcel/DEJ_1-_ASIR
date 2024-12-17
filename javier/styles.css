@@ -26,6 +26,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
   }
   
   /* Navegación y título */
@@ -196,7 +197,7 @@
   }
 
   .featured-products {
-    padding: 20px;
+    padding: 200px;
     text-align: center;
     align-items: center;
 }
@@ -205,7 +206,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 /* Flexbox para alinear imagen y detalles */
@@ -213,24 +214,26 @@
 .product-layout {
     display: flex;
     align-items: center;
-    gap: 40px;
+    /* gap: 100px; */
 }
 
 /* Alineación específica para cada producto */
 .product-item.product-item-left .product-layout {
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     /* Imagen a la izquierda */
 }
 
 .product-item.product-item-right .product-layout {
-    flex-direction: row; 
-    align-items: center;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
     /* Imagen a la derecha */
 }
 
 .product-item img {
-    width: 60%;
+    width: 700px;
     height: auto;
 }
 
