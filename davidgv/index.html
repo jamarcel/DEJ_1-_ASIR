@@ -1,10 +1,11 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Coches</title>
-    <link rel="stylesheet" href="syles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -22,8 +23,11 @@
 
     <!-- Sección Principal -->
     <section id="hero">
-        <h1>Alquiler de Coches </h1>
-        <p>Escoge entre una variedad de coches de lujo y económicos</p>
+        <div class="hero-content">
+            <h1>Alquiler de Coches</h1>
+            <p>Escoge entre una variedad de coches de lujo y económicos</p>
+            <a href="#coches" class="btn">Explorar Coches</a>
+        </div>
     </section>
 
     <!-- Coches Disponibles -->
@@ -31,53 +35,53 @@
         <h2>Coches Disponibles</h2>
         <div class="car-container">
             <div class="car">
-                <img src="img/ff.png" alt="Coche 1">
+                <img src="img/ff.png" alt="Coche Deportivo">
                 <h3>Coche Deportivo</h3>
                 <p>Precio: $100 por día</p>
             </div>
             <div class="car">
-                <img src="img/ff.png" alt="Coche 2">
+                <img src="img/ff.png" alt="Coche Familiar">
                 <h3>Coche Familiar</h3>
                 <p>Precio: $50 por día</p>
             </div>
             <div class="car">
-                <img src="img/ff.png" alt="Coche 3">
+                <img src="img/ff.png" alt="Coche Económico">
                 <h3>Coche Económico</h3>
                 <p>Precio: $30 por día</p>
             </div>
         </div>
     </section>
     
-    <main>
-        <div class="buscador">
-            <form action="#" method="GET">
-                <label for="marca">Selecciona la marca:</label>
-                <select id="marca" name="marca">
-                    <option value="toyota">Toyota</option>
-                    <option value="ford">Ford</option>
-                    <option value="bmw">BMW</option>
-                    <option value="audi">Audi</option>
-                    <option value="mercedes">Mercedes-Benz</option>
-                </select>
+    <!-- Buscador de Coches -->
+    <section id="buscador">
+        <h2>Encuentra tu Coche Ideal</h2>
+        <form action="#" method="GET">
+            <label for="marca">Selecciona la marca:</label>
+            <select id="marca" name="marca">
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes-Benz</option>
+            </select>
 
-                <label for="modelo">Selecciona el modelo:</label>
-                <select id="modelo" name="modelo">
-                    <option value="corolla">Corolla</option>
-                    <option value="camry">Camry</option>
-                    <option value="fiesta">Fiesta</option>
-                    <option value="focus">Focus</option>
-                    <option value="bmw-3">BMW 3 Series</option>
-                    <option value="bmw-x5">BMW X5</option>
-                    <option value="audi-a4">Audi A4</option>
-                    <option value="audi-q5">Audi Q5</option>
-                    <option value="mercedes-c">Mercedes-Benz C-Class</option>
-                    <option value="mercedes-e">Mercedes-Benz E-Class</option>
-                </select>
+            <label for="modelo">Selecciona el modelo:</label>
+            <select id="modelo" name="modelo">
+                <option value="corolla">Corolla</option>
+                <option value="camry">Camry</option>
+                <option value="fiesta">Fiesta</option>
+                <option value="focus">Focus</option>
+                <option value="bmw-3">BMW 3 Series</option>
+                <option value="bmw-x5">BMW X5</option>
+                <option value="audi-a4">Audi A4</option>
+                <option value="audi-q5">Audi Q5</option>
+                <option value="mercedes-c">Mercedes-Benz C-Class</option>
+                <option value="mercedes-e">Mercedes-Benz E-Class</option>
+            </select>
 
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-    </main>
+            <button type="submit" class="btn">Buscar</button>
+        </form>
+    </section>
 
     <!-- Formulario de Contacto -->
     <section id="contacto">
@@ -92,17 +96,22 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn">Enviar</button>
         </form>
     </section>
 
     <!-- Pie de Página -->
     <footer>
-        <p> 2024 Alquiler de Coches. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Alquiler de Coches. Todos los derechos reservados.</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
 </html>
-
-
 
