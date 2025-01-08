@@ -233,12 +233,12 @@
 }
 
 .product-item img {
-    width: 700px;
+    width: 60%;
     height: auto;
 }
 
 .product-info h3 {
-    font-size: 18px;
+    font-size: 10%px;
     color: #333;
 }
 
