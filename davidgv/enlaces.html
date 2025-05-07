@@ -21,41 +21,24 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Toyota</td>
-        <td>Corolla</td>
-        <td>Gasolina</td>
-        <td>1.8L</td>
-        <td>2020</td>
-      </tr>
-      <tr>
-        <td>Ford</td>
-        <td>Mustang</td>
-        <td>Gasolina</td>
-        <td>5.0L</td>
-        <td>2022</td>
-      </tr>
-      <tr>
-        <td>Chevrolet</td>
-        <td>Cruze</td>
-        <td>Diésel</td>
-        <td>2.0L</td>
-        <td>2019</td>
-      </tr>
-      <tr>
-        <td>Honda</td>
-        <td>Civic</td>
-        <td>Gasolina</td>
-        <td>2.0L</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>BMW</td>
-        <td>320i</td>
-        <td>Gasolina</td>
-        <td>2.0L Turbo</td>
-        <td>2023</td>
-      </tr>
+          <?php
+    // Consultar los datos
+    $sql = "SELECT * FROM clientes";
+    $result = $conn->query($sql);
+    if ($result === false) {
+    die("Error en la consulta: " . $conn->error);
+    }
+    if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+    echo " <tr>
+    <td>{$row['razon_social']}</td>
+    <td>{$row['descripcion']}</td>
+    <td>{$row['email']}</td>
+    <td>{$row['telefono']}</td>
+    </tr>";
+    }
+    }
+    ?>
     </tbody>
   </table>
 
