@@ -2,21 +2,17 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <?php
-         // Mostrar todos los errores (útil para debugging)
-         ini_set('display_errors', 1);
-         error_reporting(E_ALL);
-         // Conectar a la base de datos
-         // Cambiar el servername por el que proceda: localhost, IP, url, …
-         $servername = "mysql";
-         $username = "asirweb";
-         $password = "qwe_123";
-         $dbname = "webasir";
-         $conn = new mysqli($servername, $username, $password, $dbname);
-         // Verificar la conexión
-         if ($conn->connect_error) {
-         die("Conexión fallida: " . $conn->connect_error);
-         }
+<?php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    $servername = "mysql";
+    $username = "asirweb";
+    $password = "qwe_123";
+    $dbname = "webasir";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }
 ?>
 <head>
     <meta charset="UTF-8">
@@ -25,7 +21,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-    
 <body>
 
     <!-- Barra de Navegación -->
@@ -33,15 +28,16 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="enlaces.html">coches Disponibles</a></a></li>
+                <li><a href="enlaces.html">Coches Disponibles</a></li>
                 <li><a href="#">Precios</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección Principal -->
+    <!-- Sección Hero con GIF -->
     <section id="hero">
+        <div class="gif-overlay"></div>
         <div class="hero-content">
             <h1>Alquiler de Coches</h1>
             <p>Escoge entre una variedad de coches de lujo y económicos</p>
@@ -70,7 +66,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Buscador de Coches -->
     <section id="buscador">
         <h2>Encuentra tu Coche Ideal</h2>
@@ -133,4 +129,3 @@
 
 </body>
 </html>
-
