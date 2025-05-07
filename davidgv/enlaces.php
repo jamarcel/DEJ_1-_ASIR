@@ -30,11 +30,15 @@
   <table>
     <thead>
       <tr>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Combustible</th>
-        <th>Motor</th>
-        <th>Año</th>
+        <th>matricula</th>
+        <th>modelo</th>
+        <th>combustible</th>
+        <th>motor</th>
+        <th>plazas</th>
+        <th>maletas</th>
+        <th>foto</th>
+        <th>codgama</th>    
+        <th>coste</th>
       </tr>
     </thead>
     <tbody>
