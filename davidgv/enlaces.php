@@ -11,7 +11,7 @@
  $servername = "127.0.0.1";
  $username = "vicente";
  $password = "p@ssw0rd";
- $dbname = "camp";
+ $dbname = "mi_base_de_datos";
  $conn = new mysqli($servername, $username, $password, $dbname);
  // Verificar la conexión
  if ($conn->connect_error) {
